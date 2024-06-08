@@ -1,0 +1,101 @@
+body {
+  background: red;
+  border-radius: 20px;
+}
+
+.container {
+  background: green;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.tv-remote {
+  background-color: #141414;
+  display: inline-block;
+  padding: 18px !important;
+  background: radial-gradient(circle, rgba(103,102,102,1) 0%, rgba(92,91,91,1) 10%, rgba(82,81,81,1) 20%, rgba(71,70,70,1) 30%, rgba(61,60,60,1) 40%, rgba(50,50,50,1) 50%, rgba(39,39,39,1) 60%, rgba(29,29,29,1) 70%, rgba(18,18,18,1) 80%, rgba(8,8,8,1) 90%, rgba(0,0,0,1) 100%);
+}
+
+.btn {
+  background-color: #E83535;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: #27b379;
+}
+
+.btn.grey {
+  height: 27px;
+  background-color: #C7C7C7;
+}
+
+.btn.grey.one {
+  width: 107px;
+}
+
+.btn.grey.two {
+  width: 49px;
+}
+
+.btn.grey:active {
+  background-color: #9C9C9C;
+}
+
+.btn.blue {
+  height: 17px;
+  background-color: #3951E6;
+}
+
+.btn.blue:active {
+  background-color: #3146c4;
+}
+
+.btn.yellow {
+  height: 17px;
+  background-color: #FFF30A;
+}
+
+.btn.yellow:active {
+  background-color: #D6CC0F;
+}
+
+.btn.lime {
+  height: 17px;
+  background-color: #60F20C;
+}
+
+.btn.lime:active {
+  background-color: #48B00C;
+}
+
+#controls {
+  width: 55px;
+  height: 55px;
+  border-radius: 100px;
+  border: 20px solid #C7C7C7;
+  margin-top: 2ch;
+  margin-bottom: 4px;
+}
+
+/* New styles for modeToggle button */
+.btn.modeToggle {
+  width: 107px;
+  height: 27px;
+  background-color: #C7C7C7;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  line-height: 27px;
+}
+
+.btn.modeToggle:active {
+  background-color: #9C9C9C;
+}

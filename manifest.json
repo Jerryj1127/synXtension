@@ -1,0 +1,65 @@
+{
+  "manifest_version": 3,
+  "name": "synXtension",
+  "version": "1.0",
+  "description": "Browser extension to control video playback.",
+  "permissions": ["scripting", "tabs", "storage"],
+  "host_permissions": [
+    "file:///Users/jerry/*", 
+    "https://cinemakananam.onrender.com/stream/*",
+    "https://www.netflix.com/watch/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "commands": {
+    "toggleVideo": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Space",
+        "mac": "Command+Shift+Space"
+      },
+      "description": "Toggle Video"
+    },
+    "forward": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Right",
+        "mac": "Command+Shift+Right"
+      },
+      "description": "Skip Forward"
+    },
+    "vol+": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Up",
+        "mac": "Command+Shift+Up"
+      },
+      "description": "Increment Volume"
+    },
+    "vol-": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Down",
+        "mac": "Command+Shift+Down"
+      },
+      "description": "Decrement Volume"
+    }
+  }
+}

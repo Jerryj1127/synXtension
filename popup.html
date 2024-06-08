@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Controller</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="popup.js" type="module"></script>
+</head>
+<body>
+  <div class="tv-remote">
+    <center>
+      <button class="btn grey one modeToggle" id="modeToggle">Cloud</button>
+    </center>
+    <br>
+    <button class="btn grey two fas fa-pause" id="pause"></button>
+    <button class="btn grey two fas fa-play" id="play"></button>
+    <br>
+    <div style="margin-top: 6px;"></div>
+    <button class="btn grey one fas fa-step-forward" id="toggle"></button>
+    <br>
+    <div style="margin-top: 6px;"></div>
+    <button class="btn grey one fas fa-volume-mute" id="mute"></button>
+    <br>
+    <div style="margin-top: 6px;"></div>
+    <button class="btn grey two fas fa-backward" id="backward"></button>
+    <button class="btn grey two fas fa-forward" id="forward"></button>
+    <div style="margin-top: 6px;"></div>
+    <button class="btn grey two fas fa-volume-down" id="vol-"></button>
+    <button class="btn grey two fas fa-volume-up" id="vol+"></button>
+    <center>
+      <div id="controls"></div>
+    </center>
+    <br>
+  </div>
+</body>
+</html>
